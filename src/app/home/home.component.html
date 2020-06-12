@@ -1,0 +1,127 @@
+<div class="container-fluid">
+    <div class="row header">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <h3>Student Management System</h3>
+        </div>
+        <div class="col-sm-2">
+            <button class="card logout">Log Out</button>
+        </div>
+    </div>
+    <div class="row body">
+        <div class="col-sm-2">
+            <button class="card">Add Student</button>
+            <button class="card">See Students</button>
+        </div>
+        <div class="col-sm-10">
+            <div class="row form-student">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h5
+                                style="text-align: center; margin-top: 2vh; font-family: Droid Serif;font-weight: bold;">
+                                ADD STUDENT</h5>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-sm-6">
+                            <div class="form-card" *ngIf="first">
+                                <div class="form-input">
+                                    <label>First Name</label>
+                                    <input class="form-input" placeholder="Enter First Name" type="text">
+                                    <label>Last Name</label>
+                                    <input class="form-input" placeholder="Enter Last Name" type="text">
+                                    <label>Branch</label>
+                                    <select name="branch" class="form-input">
+                                        <option>Computer Science and Engineering</option>
+                                        <option>Information Technology</option>
+                                        <option>Electronics and Communication Engineering</option>
+                                        <option>Electrical and Electronics Engineering</option>
+                                        <option>Electrical Engineering</option>
+                                        <option>Mechanical Engineering</option>
+                                        <option>Civil Engineering</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-sm-10"></div>
+                                        <div class="col-sm-2">
+                                            <button mat-icon-button (click)="next()" class="button"><i
+                                                    class="fas fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-card" *ngIf="second">
+                                <div class="form-input">
+                                    <label>Address Line 1</label>
+                                    <input class="form-input" placeholder="Enter Address Line 1" type="text">
+                                    <label>Address Line 2</label>
+                                    <input class="form-input" placeholder="Enter Address Line 2" type="text">
+                                    <label>Postal Code</label>
+                                    <input type="number" class="form-input" placeholder="Postal Code">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <button mat-icon-button (click)="previous()" class="button"><i
+                                                    class="fas fa-chevron-left"></i></button>
+                                        </div>
+                                        <div class="col-sm-8"></div>
+                                        <div class="col-sm-2">
+                                            <button mat-icon-button (click)="next1()" class="button"><i
+                                                    class="fas fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-card" *ngIf="third">
+                                <div class="form-input">
+                                    <label>E-mail</label>
+                                    <input class="form-input" placeholder="Enter First Name" type="email">
+                                    <label>Contact No.</label>
+                                    <input class="form-input" placeholder="Enter Last Name" type="number">
+                                    <label> AlternateContact No.</label>
+                                    <input class="form-input" placeholder="Enter Last Name" type="number">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <button mat-icon-button (click)="previous1()" class="button"><i
+                                                    class="fas fa-chevron-left"></i></button>
+                                        </div>
+                                        <div class="col-sm-8"></div>
+                                        <div class="col-sm-2">
+                                            <button mat-icon-button (click)="next2()" class="button"><i
+                                                    class="fas fa-chevron-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-card" *ngIf="fourth">
+                                <div class="form-input">
+                                    <label>Date of Birth</label>
+                                    <input class="date" type="date">
+                                    <label>Language Known</label>
+                                    <input class="form-input" placeholder="Enter Last Name" type="text">
+                                    <label>Gender</label>
+                                    <select name="branch" class="form-input">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <button mat-icon-button (click)="previous2()" class="button"><i
+                                                    class="fas fa-chevron-left"></i></button>
+                                        </div>
+                                        <div class="col-sm-8"></div>
+                                        <div class="col-sm-2">
+                                            <button mat-icon-button (click)="submit()" class="button"><i
+                                                    class="far fa-check-circle"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
